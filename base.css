@@ -1,0 +1,26 @@
+/* Base: reset, corpo e container comum a todas as telas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+[hidden] { display: none !important; }
+body { background-color: #6f10ad; min-height: 100dvh; }
+:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+
+.app-container {
+    width: 100%;
+    max-width: 430px;
+    min-height: 100dvh;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Toast */
+.toast {
+    position: fixed; left: 50%; bottom: 100px; transform: translateX(-50%);
+    background: #222; color: #fff; padding: 10px 16px; border-radius: 20px;
+    font-size: 14px; z-index: 3000; max-width: 90%; text-align: center;
+}

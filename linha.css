@@ -1,0 +1,57 @@
+/* Tela: detalhe da linha + reportar lotação (#linha) */
+.bd-screen { background: #9900FF; color: #FFFFFF; padding: 28px 22px 22px; display: flex; flex-direction: column; }
+.bd-top { display: flex; align-items: center; justify-content: space-between; min-height: 44px; }
+.bd-top-left { display: flex; align-items: center; gap: 10px; }
+.bd-top h1 { font-size: 22px; font-weight: 700; }
+.bd-back { width: 44px; height: 44px; margin-left: -10px; color: #FFFFFF; font-size: 1.2rem; display: flex; align-items: center; justify-content: center; text-decoration: none; }
+.bd-fav { width: 44px; height: 44px; border: 0; border-radius: 50%; background: #FFFFFF; color: #3b0a78; font-size: 1.05rem; display: grid; place-items: center; cursor: pointer; }
+.bd-fav[aria-pressed="true"] { color: #d99a00; }
+
+.bd-card { margin-top: 22px; background: #f1f4f6; color: #14141a; border-radius: 14px; padding: 18px 16px; display: flex; align-items: flex-start; gap: 14px; }
+.bd-badge { min-width: 56px; height: 48px; padding: 0 6px; border-radius: 10px; color: #FFFFFF; font-size: 18px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+.bd-info { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.bd-name { font-size: 17px; font-weight: 700; }
+.bd-dir { font-size: 13px; color: #4a4a57; }
+.bd-chip { margin-top: 8px; align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; border-radius: 14px; padding: 5px 12px; }
+.bd-chip.full  { background: #ffd9d6; color: #a3191b; }
+.bd-chip.mid   { background: #fff1c2; color: #6b4a00; }
+.bd-chip.empty { background: #d7f7e3; color: #0f6b35; }
+.bd-eta { display: flex; align-items: center; gap: 6px; padding-top: 4px; font-size: 16px; font-weight: 600; white-space: nowrap; }
+.bd-eta i { font-size: .75rem; }
+
+.bd-title { margin: 28px 0 0; font-size: 18px; font-weight: 700; }
+.bd-meter { margin-top: 12px; display: flex; gap: 8px; }
+.bd-meter span { flex: 1; height: 8px; border-radius: 4px; background: rgba(255, 255, 255, .28); }
+.bd-meter.full span:not(.off)  { background: #ff6b6b; }
+.bd-meter.mid span:not(.off)   { background: #ffc83d; }
+.bd-meter.empty span:not(.off) { background: #3ddc84; }
+.bd-note { margin: 12px 0 0; display: flex; align-items: center; gap: 8px; font-size: 13px; }
+
+.bd-report { margin-top: 20px; background: rgba(255, 255, 255, .14); border-radius: 14px; padding: 14px 16px; }
+.bd-report h2 { font-size: 14px; font-weight: 700; }
+.bd-report p { margin: 2px 0 0; font-size: 12px; opacity: .9; }
+.bd-options { margin-top: 12px; display: flex; gap: 8px; }
+.bd-rbtn { flex: 1; min-height: 58px; border: 0; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; cursor: pointer; }
+.bd-label { display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; }
+.bd-dot { width: 10px; height: 10px; border-radius: 50%; }
+.bd-count { font-size: 12px; font-weight: 500; }
+.bd-rbtn.empty { background: #d7f7e3; color: #0f5a2e; }
+.bd-rbtn.empty .bd-dot { background: #1fa855; }
+.bd-rbtn.mid { background: #fff1c2; color: #6b4a00; }
+.bd-rbtn.mid .bd-dot { background: #e5a400; }
+.bd-rbtn.full { background: #ffd9d6; color: #8f1417; }
+.bd-rbtn.full .bd-dot { background: #d92d30; }
+.bd-rbtn[aria-pressed="true"] { box-shadow: 0 0 0 3px #FFFFFF; }
+.bd-total { margin-top: 10px; font-size: 12px; opacity: .9; }
+.bd-thanks { margin-top: 6px; font-size: 12px; font-weight: 600; }
+
+.bd-route-title { margin: 28px 0 0; font-size: 14px; font-weight: 700; }
+.bd-route { margin: 16px 0 0; padding: 0; list-style: none; flex: 1; position: relative; display: flex; flex-direction: column; justify-content: space-between; gap: 14px; }
+.bd-route::before { content: ""; position: absolute; left: 13px; top: 14px; bottom: 14px; width: 3px; background: #b9a4ff; }
+.bd-stop { position: relative; display: flex; align-items: center; gap: 16px; font-size: 14px; }
+.bd-stop.end { font-weight: 700; }
+.bd-pin { width: 28px; height: 28px; flex: none; display: flex; align-items: center; justify-content: center; }
+.bd-pin::after { content: ""; width: 16px; height: 16px; border-radius: 50%; background: #FFFFFF; border: 3px solid #2b3bff; }
+.bd-stop.end .bd-pin::after { width: 28px; height: 28px; border-width: 5px; }
+.bd-tag { background: #6a2bd8; font-size: 12px; font-weight: 500; border-radius: 12px; padding: 4px 12px; }
+.bd-map { margin-top: 18px; height: 52px; border-radius: 12px; background: #1f3bff; color: #FFFFFF; font-size: 15px; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 10px; text-decoration: none; }

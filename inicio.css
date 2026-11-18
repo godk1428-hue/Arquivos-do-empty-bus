@@ -1,0 +1,71 @@
+/* Telas: Próximos ônibus (#inicio) e Linhas de ônibus (#linhas) */
+.main-screen { background-color: #9900FF; color: #FFFFFF; padding: 20px 16px 32px; }
+
+/* topo */
+.app-header { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 20px; }
+.user-info h1 { font-size: 1.4rem; line-height: 1.2; }
+.user-info p { font-size: .8rem; opacity: .95; margin-top: 2px; }
+.header-actions { display: flex; gap: 10px; flex: none; }
+.user-avatar {
+    width: 48px; height: 48px; flex: none; border: 0; border-radius: 50%;
+    background: #FFFFFF; color: #1b1630; font-size: 1.15rem;
+    display: grid; place-items: center; cursor: pointer; text-decoration: none;
+}
+.topbar { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+.topbar h1 { font-size: 1.4rem; line-height: 1.2; }
+.back { color: #FFFFFF; font-size: 1.2rem; padding: 4px; text-decoration: none; }
+
+/* busca */
+.search-box {
+    display: flex; align-items: center; gap: 10px; margin-bottom: 14px;
+    background: #E2D1F9; color: #6b5f80; border-radius: 12px; padding: 0 14px;
+}
+.search-box input { flex: 1; min-width: 0; border: 0; background: none; outline: none; padding: 13px 0; font-size: .9rem; color: #1b1630; }
+.search-box input::placeholder { color: #6b5f80; }
+.search-box:focus-within { outline: 3px solid #fff; outline-offset: 2px; }
+
+/* atalhos */
+.actions-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 26px; }
+.action-card { background: #FFFFFF; color: #1b1630; border-radius: 12px; padding: 16px 14px; text-decoration: none; display: grid; gap: 2px; }
+.action-card > i { font-size: 1.6rem; color: #0052CC; margin-bottom: 14px; }
+.action-card h3 { font-size: .9rem; }
+.action-card p { font-size: .7rem; color: #4a4458; }
+
+/* filtros */
+.chips { display: flex; gap: 10px; margin-bottom: 16px; }
+.chip { border: 0; border-radius: 999px; padding: 7px 18px; font-size: .8rem; font-weight: 600; background: #FFFFFF; color: #1b1630; cursor: pointer; }
+.chip[aria-pressed="true"] { background: #1f4fe0; color: #FFFFFF; }
+
+/* lista */
+.section-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px; }
+.section-header h2 { font-size: 1.05rem; }
+.see-all { color: #5cf1ff; font-size: .85rem; text-decoration: none; }
+.bus-list { display: grid; gap: 14px; }
+.bus-item { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 12px; border-radius: 12px; padding: 14px; cursor: pointer; }
+.bus-item.dark { background: rgba(255, 255, 255, .2); padding-block: 22px; }
+.bus-item.light { background: #eaf3f1; color: #1b1630; }
+.bus-number { min-width: 52px; text-align: center; padding: 9px 6px; border-radius: 8px; color: #FFFFFF; font-weight: 700; font-size: 1.05rem; }
+.badge-201 { background-color: #0052CC; }
+.badge-307 { background-color: #2E7D32; }
+.badge-412 { background-color: #311B92; }
+.bus-details { display: grid; gap: 2px; font-size: .75rem; }
+.bus-details h4 { font-size: .85rem; }
+.bus-side { display: grid; justify-items: end; gap: 8px; }
+.bus-time { font-weight: 700; font-size: 1.1rem; white-space: nowrap; }
+.bus-row { display: flex; align-items: center; gap: 8px; }
+.pill { display: inline-flex; align-items: center; gap: 5px; border-radius: 999px; padding: 4px 10px; font-size: .7rem; font-weight: 600; }
+.pill.full  { background: #ffb3b3; color: #a4191a; }
+.pill.mid   { background: #fde0a8; color: #8a4f00; }
+.pill.empty { background: #bff0d0; color: #17683a; }
+.fav { border: 0; background: none; color: #8a6d00; font-size: 1rem; cursor: pointer; padding: 2px; }
+.light :focus-visible { outline-color: #1b1630; }
+.bus-empty { text-align: center; padding: 28px 8px; opacity: .9; }
+
+/* banner */
+.footer-banner {
+    display: flex; align-items: center; gap: 14px; margin-top: 26px;
+    background: #FFFFFF; color: #1b1630; border-radius: 12px; padding: 16px; text-decoration: none;
+}
+.footer-banner > i { font-size: 1.8rem; color: #0052CC; }
+.footer-banner strong { display: block; font-size: .9rem; }
+.footer-banner small { font-size: .7rem; color: #4a4458; }
